@@ -2,30 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="task5.css">
+    <title>Task-css-7</title>
+
 </head>
 <body>
-    <div class ="navBar">
-        <a href="homeage.com" id="home">Home page</a>
-        <a href="mjusings.com" id="musings">Musings</a>
-        <a href="https://en.wikipedia.org/wiki/Agra" id="town">My town</a>
-        <a href="link.com" id="links">Links</a>
-    </div>
-    <div class = "intro">
-        <h1>My first styled page</h1>
-        <h3>Welcome to styled page!</h3>
-        <p>It lacks images,but atleast it has style. And now it has links,
-             even if they don't go anywhere....
-        </p>
-        <p>There should be more here but i don't
-            know what yet
-        </p>
-        <hr color="purple">
-        <p id="italicFont">Made 5th September</p>
-        <p id="italicFont">By Myself</p>
-    </div>
+    <div class="container">
+  <form name="registration" class="registartion-form" onsubmit="return formValidation()">
+    <table>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" name="name" id="name" placeholder="your name"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="text" name="email" id="email" placeholder="your email"></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" name="password" id="password"></td>
+      </tr>
+      <tr>
+        <td><label for="phoneNumber">Phone Number:</label></td>
+        <td><input type="number" name="phoneNumber" id="phoneNumber"></td>
+      </tr>
+      <tr>
+        <td><label for="gender">Gender:</label></td>
+        <td>Male: <input type="radio" name="gender" value="male">
+          Female: <input type="radio" name="gender" value="female">
+          Other: <input type="radio" name="gender" value="other"></td>
+      </tr>
+      <tr>
+        <td><label for="language">language</label></td>
+        <td>
+          <select name="language" id="language">
+            <option value="">Select language</option>
+            <option value="English">English</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Russian">Russian</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="zipcode">Zip Code:</label></td>
+        <td><input type="number" name="zipcode" id="zipcode"></td>
+      </tr>
+      <tr>
+        <td><label for="about">About:</label></td>
+        <td><textarea name="about" id="about" placeholder="Write about yourself..."></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" class="submit" value="Register" /></td>
+      </tr>
+    </table>
+  </form>
+</div>
 </body>
 </html>
